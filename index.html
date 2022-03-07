@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>Examen Alonzo </title>
+<script>
+function comprobarClave(){
+    clave1 = document.f1.clave1.value
+    clave2 = document.f1.clave2.value
+     
+
+    if (clave1 == "Emilio" && clave2 == "Alonzo"){
+       alert("Los Datos Coinciden...\n Bienvenido");
+        var href =  "dos.html";
+        window.location=href;
+         }
+       
+    else{
+       alert("Las dos claves son distintas...\nIntentelo nuevamente.");
+        var href =  "index.html";
+        window.location=href;
+    };
+       
+}  
+</script>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+<center><h1><p class="class1"> ¡Bienvenido!</p> 
+  Ingresa la contraseña para continuar</h1>
+</center>
+
+
+
+
+
+
+<center class="margin" >
+  <div class="border">
+    <div class="textotamg">
+
+<img src="j.png" width="35" height="35" >
+
+  <br><font size="4">Ingrese su contraseña</br>
+
+
+<form action="" name="f1">
+       <br id="sombra"><font size="4">Contraseña:</br> <input type="password" name="clave1" size="20">
+<br>
+<br id="som">ingrese nuevamente su contraseña:</br> <input type="password" name="clave2" size="20">
+<br>
+<br><input type="button" value="Siguiente" onClick="comprobarClave()">
+</br>
+</form>
+</center>
+</div>
+</div>
+
+
+<center><div> <a href="index.html"> <input type="button" value="Volver a intentar"></a></div></center>
+
+
+
+</body>
+</html>
